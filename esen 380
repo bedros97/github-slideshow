@@ -1,0 +1,24 @@
+  
+public class MerhabaDünya{
+  public static void main(String args[]){
+    double sayi, hafta, ay, yıllık, capacity-factor;
+        Scanner oku = new Scanner(System.in);
+        System.out.println("capacity factorü hangi zamana göre bakıcaksınız(not:haftalık için 1i,ay için 2yi, yıl için 3e yazınız.)");
+        sayi = oku.nextInt();
+         if (sayi=1) {
+            System.out.println("haftalık üretilen enerji miktarını giriniz:");
+            hafta = oku.nextDouble();
+            capacity-factor = hafta / (7*30)
+        } else if (sayi=2) {
+            System.out.println("aylık üretilen enerji miktarını giriniz:");
+            ay = oku.nextDouble();
+            capacity-factor = ay / (30*30)
+        }else if (sayi=3){
+            System.out.println("yıllık üretilen enerji miktarını giriniz:");
+            yıl = oku.nextDouble();
+            capacity-factor = yıl / (365*30)
+
+        }
+         System.out.println("capacity factor="+ capacity-factor);
+  }
+}
